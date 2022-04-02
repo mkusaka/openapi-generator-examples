@@ -7,5 +7,10 @@
   "license": "MIT",
   "dependencies": {
     "@openapitools/openapi-generator-cli": "^2.4.23"
+  },
+  "scripts": {
+    "axios": "openapi-generator-cli generate -i pet.swagger.json -g typescript-axios -o typescript-axios",
+    "fetch": "openapi-generator-cli generate -i pet.swagger.json -g typescript-fetch -o typescript-fetch -p typescriptThreePlus=true",
+    "fetch:6": "docker run --rm -v ${PWD}:/local openapitools/openapi-generator-cli generate -i /local/pet.swagger.json -g typescript-fetch -o /local/typescript-fetch-6 -p supportsES6=true"
   }
 }

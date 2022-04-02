@@ -1100,11 +1100,10 @@
         }
       },
       "Pet": {
-        "required": [
-          "name",
-          "photoUrls"
-        ],
         "type": "object",
+        "xml": {
+          "name": "pet"
+        },
         "properties": {
           "id": {
             "type": "integer",
@@ -1147,11 +1146,26 @@
               "pending",
               "sold"
             ]
+          },
+          "stringRank": {
+            "type": "string",
+            "enum": [
+              1,
+              2
+            ]
+          },
+          "numberRank": {
+            "type": "number",
+            "enum": [
+              1,
+              2
+            ]
           }
         },
-        "xml": {
-          "name": "pet"
-        }
+        "required": [
+          "name",
+          "photoUrls"
+        ]
       },
       "ApiResponse": {
         "type": "object",
