@@ -87,28 +87,31 @@ export interface Pet {
  * @export
  */
 export const PetStatusEnum = {
-    Available: 'available' as 'available',
-    Pending: 'pending' as 'pending',
-    Sold: 'sold' as 'sold'
-};
+    Available: 'available',
+    Pending: 'pending',
+    Sold: 'sold'
+} as const;
+
 export type PetStatusEnum = typeof PetStatusEnum[keyof typeof PetStatusEnum];
 
 /**
  * @export
  */
 export const PetStringRankEnum = {
-    _1: '1' as '1',
-    _2: '2' as '2'
-};
+    _1: '1',
+    _2: '2'
+} as const;
+
 export type PetStringRankEnum = typeof PetStringRankEnum[keyof typeof PetStringRankEnum];
 
 /**
  * @export
  */
 export const PetNumberRankEnum = {
-    NUMBER_1: 1 as 1,
-    NUMBER_2: 2 as 2
-};
+    NUMBER_1: 1,
+    NUMBER_2: 2
+} as const;
+
 export type PetNumberRankEnum = typeof PetNumberRankEnum[keyof typeof PetNumberRankEnum];
 
 
