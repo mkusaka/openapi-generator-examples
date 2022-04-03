@@ -164,7 +164,8 @@
               "read:pets"
             ]
           }
-        ]
+        ],
+        "parameters": []
       }
     },
     "/pet/findByStatus": {
@@ -939,7 +940,8 @@
           "id": {
             "type": "integer",
             "format": "int64",
-            "example": 10
+            "example": 10,
+            "nullable": true
           },
           "petId": {
             "type": "integer",
