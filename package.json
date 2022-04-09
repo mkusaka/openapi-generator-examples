@@ -5,19 +5,11 @@
   "repository": "https://github.com/mkusaka/openapi-generator-examples.git",
   "author": "mkusaka <hinoshita1992@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "@openapitools/openapi-generator-cli": "^2.4.23",
-    "autorest": "^3.6.1",
-    "openapi-typescript-codegen": "^0.20.1"
-  },
+  "dependencies": {},
   "scripts": {
-    "axios": "openapi-generator-cli generate -i pet.swagger.json -g typescript-axios -o typescript-axios",
-    "fetch": "openapi-generator-cli generate -i pet.swagger.json -g typescript-fetch -o typescript-fetch -p typescriptThreePlus=true",
-    "fetch:6": "docker run --rm -v ${PWD}:/local openapitools/openapi-generator-cli generate -i /local/pet.swagger.json -g typescript-fetch -o /local/typescript-fetch-6 -p supportsES6=true,typescriptThreePlus=true",
-    "openapi-typescript-codegen": "openapi -i pet.swagger.json -o openapi-typescript-codegen --useUnionTypes",
-    "openapi-typescript-codegen:yaml": "openapi -i swagger.yaml -o openapi-typescript-yaml --useUnionTypes --indent 2",
-    "openapi-typescript-codegennumber": "openapi -i pet.swagger.number_enum.json -o openapi-typescript-codegennumber",
-    "openapi-typescript-codegenstring": "openapi -i pet.swagger.string_enum.json -o openapi-typescript-codegenstring",
-    "autorest": "autorest --typescript pet.swagger.json --tracing-info"
+    "": ""
+  },
+  "devDependencies": {
+    "bundlesize": "^0.18.1"
   }
 }
