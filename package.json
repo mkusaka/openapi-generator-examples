@@ -1,15 +1,16 @@
 {
-  "name": "openapi-generator-examples",
+  "name": "my-webpack-project",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/mkusaka/openapi-generator-examples.git",
   "author": "mkusaka <hinoshita1992@gmail.com>",
   "license": "MIT",
-  "dependencies": {},
   "scripts": {
-    "": ""
+    "size:current": ""
   },
   "devDependencies": {
+    "@webpack-cli/generators": "^2.4.2",
     "bundlesize": "^0.18.1"
-  }
+  },
+  "description": "My webpack project"
 }
