@@ -6,10 +6,14 @@
   "author": "mkusaka <hinoshita1992@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "size:current": ""
+    "build": "yarn build:current && yarn build:clearify",
+    "current": "yarn --cwd current",
+    "clearify": "yarn --cwd clearify",
+    "build:current": "yarn current && yarn current build",
+    "build:clearify": "yarn clearify && yarn clearify build",
+    "bundlesize": "yarn build && bundlesize --config bundlesize.json"
   },
   "devDependencies": {
-    "@webpack-cli/generators": "^2.4.2",
     "bundlesize": "^0.18.1"
   },
   "description": "My webpack project"

@@ -1,0 +1,10 @@
+{
+  "files": [
+    {
+      "path": "current/dist/main.js"
+    },
+    {
+      "path": "clearify/dist/main.js"
+    }
+  ]
+}
